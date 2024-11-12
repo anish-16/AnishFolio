@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Service from './components/Service'
+import ParticlesBackground from './ParticlesBackground'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Projects />
        <Contacts />
        <Footer />
+       <ParticlesBackground /> {/* Add the particles background*/}
       </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import pic1 from '../assets/pic1.png'
 const Home = () => {
   return (
-    <div className='bg-black text-white text-centre py-16'>
+    <div className='bg-transparent text-white text-centre py-16'>
         <img src={pic1} alt="" 
         className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105'/>
         <h1 className='text-4xl font-bold'>

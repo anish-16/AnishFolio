@@ -36,5 +36,6 @@
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8",
     "vite-plugin-gh-pages": "^1.0.0"
-  }
+  },
+  "homepage": "https://anish-16.github.io/AnishFoliio"
 }

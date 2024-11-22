@@ -1,112 +1,86 @@
 const particle = {
-  "particles": {
-    "number": {
-      "value": 20,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
+  background: {
+    color: {
+      value: "000000",
     },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "polygon",
-      "stroke": {
-        "width": 0,
-        "color": "#000"
-      },
-      "polygon": {
-        "nb_sides": 6
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 72.15354273894853,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 10,
-        "size_min": 40,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 200,
-      "color": "#000000",
-      "opacity": 1,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 3,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
   },
-  "interactivity": {
-    "detect_on": "window",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "grab"
+  fpsLimit: 60,
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      onClick: {
+        enable: true,
+        mode: "push",
       },
-      "onclick": {
-        "enable": false,
-        "mode": "push"
+      onHover: {
+        enable: true,
+        mode: "repulse",
       },
-      "resize": true
+      resize: true,
     },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
+    modes: {
+      bubble: {
+        distance: 400,
+        duration: 2,
+        opacity: 0.8,
+        size: 40,
       },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+      push: {
+        quantity: 4,
       },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
+      repulse: {
+        distance: 200,
+        duration: 0.4,
       },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
+    },
   },
-  "retina_detect": true
-}
+  particles: {
+    color: {
+      value: ["#E6E6FA", "#D8BFD8", "#DDA0DD", "#EE82EE"],
+    },
+    links: {
+      color: {
+        value: ["#ADD8E6", "#FFFF00", "#90EE90", "#FFA500"],
+      },
+      distance: 150,
+      enable: true,
+      opacity: 0.5,
+      width: 1,
+    },
+    collisions: {
+      enable: true,
+    },
+    move: {
+      direction: "none",
+      enable: true,
+      outMode: "bounce",
+      random: false,
+      speed: 2,
+      straight: false,
+    },
+    number: {
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+      value: 80,
+    },
+    opacity: {
+      value: 0.9,
+      random: true,
+    },
+    shape: {
+      type: "polygon",
+      polygon: { 
+        nb_sides: 6,
+      },
+    },
+    size: {
+      random: true,
+      value: 6,
+    },
+  },
+  detectRetina: true,
+};
 
 export default particle;

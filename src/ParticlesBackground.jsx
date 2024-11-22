@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
-import particle from './Particle'; // Correct import for particle.js
+import particle from '../src/Particle';
 
 const ParticlesBackground = ({ init, loaded }) => {
   return (
@@ -8,7 +8,7 @@ const ParticlesBackground = ({ init, loaded }) => {
       id="tsparticles"
       init={init}
       loaded={loaded}
-      options={particle} // Use the particle configuration
+      options={particle} 
     />
   );
 };

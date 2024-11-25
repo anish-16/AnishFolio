@@ -9,8 +9,6 @@ export default defineConfig({
     'process.env.PUBLIC_URL': JSON.stringify('/AnishFolio/')
   },
   server: {
-    headers: {
-      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'",
-    },
+    headers: { 'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.emailjs.com https://anish-16.github.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://anish-16.github.io; font-src 'self'; connect-src 'self' https://api.emailjs.com", },
   },
 });

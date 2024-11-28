@@ -1,21 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Fade as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
-  return (
-    <nav className='bg-transparent text-white px-8 md:px-16 lg:px-24'>
-        <div className='container py-2 flex justify-centre md:justify-between items-centre'> 
-            <div className='text-2xl font-bold hidden md:inline'>Anish Kumar</div>
-            <div className='space-x-6'>
-                <a href="#home" className='hover:text-gray-400'>Home</a>
-                <a href="#about" className='hover:text-gray-400'>About Me</a>
-                <a href="#service" className='hover:text-gray-400'>Services</a>
-                <a href="#projects" className='hover:text-gray-400'>Projects</a>
-                <a href="#contact" className='hover:text-gray-400'>Contact</a>
-            </div>
-            <button className='bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Connect Me</button>      
-          </div>
-    </nav>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  return (
+    <nav className="bg-transparent text-white px-8 md:px-16 lg:px-24">
+      <div className="container py-2 flex justify-between items-center relative">
+        <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-lg">
+          Anish Kumar
+        </div>
+        <div className="fixed top-4 right-4">
+          <Hamburger toggled={isOpen} toggle={toggleMenu} size={30} color="#ffffff" duration={0.4} />
+        </div>
+        {isOpen && (
+          <div className="fixed top-16 right-4 bg-black text-white p-5 rounded">
+            <ul className="space-y-4">
+              <li><a href="#home" className="hover:text-gray-400" onClick={toggleMenu}>Home</a></li>
+              <li><a href="#about" className="hover:text-gray-400" onClick={toggleMenu}>About Me</a></li>
+              <li><a href="#services" className="hover:text-gray-400" onClick={toggleMenu}>Services</a></li>
+              <li><a href="#projects" className="hover:text-gray-400" onClick={toggleMenu}>Projects</a></li>
+              <li><a href="#contacts" className="hover:text-gray-400" onClick={toggleMenu}>Contact</a></li>
+            </ul>
+          </div>
+        )}
+        <div className="hidden md:flex flex-grow justify-center space-x-4 md:space-x-6 text-xl mr-20 md:text-2xl items-center mx-auto">
+          <a href="#home" className="hover:text-gray-400">Home</a>
+          <a href="#about" className="hover:text-gray-400">About Me</a>
+          <a href="#services" className="hover:text-gray-400">Services</a>
+          <a href="#projects" className="hover:text-gray-400">Projects</a>
+          <a href="#contacts" className="hover:text-gray-400">Contact</a>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

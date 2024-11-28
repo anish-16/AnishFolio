@@ -21,21 +21,30 @@ function App() {
   
   return (
     <>
-    <ParticlesBackground
+      <ParticlesBackground
         id="tsparticles"
         init={particleInit}
         loaded={load}
       />
-    <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Service />
-      <Projects />
-      <Contacts />
-      <Footer />
-      
-    </div>
+      <div>
+        <Navbar />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="services">
+          <Service />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contacts">
+          <Contacts />
+        </section>
+        <Footer />
+      </div>
     </>
   );
 }

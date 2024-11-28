@@ -7,11 +7,11 @@ const Footer = () => {
         <div className='container mx-auto px-8 md:px-16 lg:px-24'>
             <div className='flex flex-col md:flex-row md:space-x-12 items-centre mb-4'>
                 <div className='flex-1 mb-4 md:mb-0'>
-                <h3 className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mt-4'>Anish Kumar</h3>
+                <h3 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mt-4'>Anish Kumar</h3>
                 <p className='text-gray-400'>computer Science Engineer based in INDIA, specializing in web and software development</p>
             </div>
             <div className='flex-1 w-full'>
-            <h3 className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mt-4'>Social Links</h3>
+            <h3 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mt-4'>Social Links</h3>
             <div className='flex justify-center space-x-6   my-4 md:my-4'>
             <a href="https://www.linkedin.com/in/anish167/"  className="text-gray-400 hover:text-white">
                 <FaLinkedin />

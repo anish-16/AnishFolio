@@ -2,8 +2,8 @@ import React from 'react'
 const services = [
   {
     "id": 1,
-    title: "web Design",
-    description: "Creating visually appealing nd user-friendly web designs.",
+    title: "Data Structures and Algorithm",
+    description: "Mastering the art of efficiently organizing and manipulating data to solve complex problems.",
   },
   {
     "id": 2,
@@ -25,12 +25,17 @@ const services = [
     title: "AWS",
     description: "Harness cloud technologies to create scalable, resilient, and highly available applications.",
   },
+  {
+    "id": 6,
+    title: "Machine Learning",
+    description: "Possessing deep knowledge of ml algorithms and a thorough understanding of model evaluation and deployment.",
+  },
 ];
 const Service = ()=> {
   return (
     <div className='bg-transparent text-white py-20' id='service'>
     <div className='container mx-auto px-8 md:px-16 lg:px-24'>
-        <h2 className='text-4xl font-bold text-centre mb-12'>My Services</h2>
+        <h2 className='text-5xl font-bold text-centre mb-12'> My Services</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {services.map((service) => (
             <div key={service.id} className='bg-gray-900 px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105'>

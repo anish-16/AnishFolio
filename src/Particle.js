@@ -63,7 +63,7 @@ const particle = {
         enable: true,
         value_area: 800,
       },
-      value: 80,
+      value: 70,
     },
     opacity: {
       value: 0.9,
@@ -79,6 +79,12 @@ const particle = {
       random: true,
       value: 6,
     },
+    life: {
+       duration: 
+       { sync: false,
+         value: 5,
+         },
+       },
   },
   detectRetina: true,
 };

@@ -1,7 +1,8 @@
 #root {
-  max-width: 1280px;
+
+  max-width: 1550px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -40,3 +41,39 @@
 .read-the-docs {
   color: #888;
 }
+
+.navbar a {
+  transition: color 0.3s ease;
+}
+
+.navbar button {
+  transition: transform 0.3s ease;
+}
+
+.menu-transition {
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* For larger screens */
+ @media (min-width: 768px) { 
+  .nav-link {
+     font-size: 1.25rem;
+      margin-right: 1rem; 
+    } 
+  } 
+  
+  /* For smaller screens */ 
+  @media (max-width: 767px) { 
+    .nav-link { 
+      font-size: 1rem;
+       margin-bottom: 1rem; 
+      }
+
+      .hamburger-menu{
+        width:100%;
+      }
+    }

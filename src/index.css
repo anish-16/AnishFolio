@@ -30,6 +30,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -93,3 +96,15 @@ body, html, #root {
   z-index: -1; /* Ensures it is behind other content */
 }
 
+/* Navbar transitions */
+.navbar a {
+  transition: color 0.3s ease;
+}
+
+.navbar button {
+  transition: transform 0.3s ease;
+}
+
+.menu-transition {
+  transition: all 0.3s ease;
+}

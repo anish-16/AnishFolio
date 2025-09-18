@@ -1,19 +1,35 @@
 import React from 'react'
 import prakriti from "../assets/prakriti.png";
 import dramaia from "../assets/dramaia.png";
+import Heart from "../assets/Heart.png";
+import safe from "../assets/safe.png";
 
 const projects = [
     {
         id:1,
-        name: "Prakriti",
-        technologies: "React",
-        image: prakriti,
-        github: "https://github.com/sahil-n06/prakriti",
+        name: "SafeReport : Anonymous Crime Reporting App",
+        technologies: "Next.js, Prisma, Typescript, Neon Database",
+        image: safe,
+        github: "https://github.com/anish-16/SAFEREPORT_Crime-Report-App",
+    },
+     {
+        id:2,
+        name: "Multiple Disease Prediction",
+        technologies: "Python, Machine Learning, Streamlit",
+        image: Heart,
+        github: "https://github.com/anish-16/Multiple_Disease_Prediction",
     },
     {
-        id:2,
+        id:3,
+        name: "Prakriti",
+        technologies: "React.js, Node.js, Javascript",
+        image: prakriti,
+        github: "https://github.com/anish-16/prakriti",
+    },
+    {
+        id:3,
         name: "Dramaia",
-        technologies: "NextJS-14",
+        technologies: "Next.js, Tailwind CSS, Rapid API, Javascript",
         image: dramaia,
         github: "https://github.com/anish-16/Dramaia",
     },

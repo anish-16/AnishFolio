@@ -13,11 +13,11 @@ const Home = () => {
             , Computer Science Engineer 
         </h1>
         <p className='mt-5 text-lg text-gray-300 '>
-            I specialize in DSA and Development.
+            I specialize in Full-Stack Development and Data Science, with a strong foundation in Data Structures and Algorithms (DSA).
         </p>
         <div className='mt-8 space-x-4'>
         
-            <a href={`${process.env.PUBLIC_URL}/Kumar_Resume.pdf`} target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.PUBLIC_URL}/2nd_ResumeAnish.pdf`} target="_blank" rel="noopener noreferrer">
                 <button className='bg-gradient-to-r from-green-600 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-8 py-4 rounded-full'>
                     Resume
                 </button>

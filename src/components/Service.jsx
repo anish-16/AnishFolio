@@ -16,20 +16,20 @@ const services = [
     description: "Developing robust swrver-side logic and databases.",
   },
   {
-    "id": 4,
-    title: "Full-stack Development",
-    description: "Combining both frontend and backend development.",
-  },
+  "id": 4,
+  "title": "Full-stack Development",
+  "description": "Building and integrating both frontend and backend systems, ensuring seamless functionality, scalability, and user experience across the entire application stack."
+},
   {
     "id": 5,
-    title: "AWS",
-    description: "Harness cloud technologies to create scalable, resilient, and highly available applications.",
-  },
-  {
-    "id": 6,
     title: "Machine Learning",
     description: "Possessing deep knowledge of ml algorithms and a thorough understanding of model evaluation and deployment.",
   },
+  {
+  "id": 6,
+  "title": "Data Science",
+  "description": "Expertise in extracting insights from complex datasets using statistical analysis, machine learning, and visualization, with strong skills in data cleaning, feature engineering, and storytelling through data."
+}
 ];
 const Service = ()=> {
   return (

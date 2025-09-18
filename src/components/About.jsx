@@ -10,8 +10,7 @@ const About = () => {
                 className='w-72 h-80 rounded object-cover mb-8 md:mb-0'/>
                 <div className="flex-1">
                 <p className="text-lgmb-8">
-                I am a computer science engineer passionate about developing innovative, user-friendly applications.
-                 My solid foundation in data structure and algorithms, and keen eye for detail helps me deliver high-quality solutions.
+                I am a Computer Science Engineer passionate about building innovative and user-friendly applications. Specialized in Full-Stack Development and Data Science, with a strong foundation in Data Structures and Algorithms (DSA), I strive to create scalable, efficient, and high-quality solutions that bridge technology with real-world impact.
                  
 
                    </p>
@@ -24,16 +23,16 @@ const About = () => {
                         </div>
                     </div>
                     <div className='flex items-centre'>
-                        <label htmlFor='htmlandcss' className='w-2/12'>React JS</label>
+                        <label htmlFor='htmlandcss' className='w-2/12'>Full Stack</label>
                         <div className='grow bg-gray-800 rounded-full h-2.5'>
                             <div className='bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-10/12'>
                             </div>
                         </div>
                     </div>
                     <div className='flex items-centre'>
-                        <label htmlFor='htmlandcss' className='w-2/12'>node js</label>
+                        <label htmlFor='htmlandcss' className='w-2/12'>Data Science</label>
                         <div className='grow bg-gray-800 rounded-full h-2.5'>
-                            <div className='bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-9/12'>
+                            <div className='bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-10/12'>
                             </div>
                         </div>
                     </div>
@@ -47,7 +46,7 @@ const About = () => {
                     </div> 
                     <div>
                         <h3 className='text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500'>
-                            5+
+                            8+
                         </h3>
                         <p>Projects Completed</p>
                     </div>
